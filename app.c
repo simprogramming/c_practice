@@ -1,17 +1,14 @@
 #include <stdio.h>
 #include <ctype.h>
 
-void birthday(char name[], int age) {
-    printf("Happy birthday dear %s\n", name);
-    printf("You are %d year old\n", age);
+int findMax(int x, int y) {
+    return (x > y) ? x : y;
 }
 
 int main(){
 
-    char name[] = "Bro";
-    int age = 21;
-
-    birthday(name, age);
+    int max = findMax(5,29);
+    printf("%d\n", max);
 
     return 0;
 }
