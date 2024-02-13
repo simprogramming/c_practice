@@ -1,23 +1,17 @@
 #include <stdio.h>
-#include <stdbool.h>
+#include <ctype.h>
+
+void birthday(char name[], int age) {
+    printf("Happy birthday dear %s\n", name);
+    printf("You are %d year old\n", age);
+}
 
 int main(){
 
-    char grade;
+    char name[] = "Bro";
+    int age = 21;
 
-    printf("\nEnter your grade: ");
-    scanf("%c", &grade);
+    birthday(name, age);
 
-    switch (grade){
-        case 'A':
-            printf("u are very good\n");
-            break;
-        case 'B':
-            printf("study more\n");
-            break;
-        default:
-            printf("please only enter valide grade\n");
-
-    }
     return 0;
 }
