@@ -3,20 +3,21 @@
 
 int main(){
 
-    int age;
+    char grade;
 
-    printf("\nEnter your age: ");
-    scanf("%d", &age);
+    printf("\nEnter your grade: ");
+    scanf("%c", &grade);
 
+    switch (grade){
+        case 'A':
+            printf("u are very good\n");
+            break;
+        case 'B':
+            printf("study more\n");
+            break;
+        default:
+            printf("please only enter valide grade\n");
 
-    if(age >= 18){
-        printf("you get a credit card\n");
-    }
-    else if(age<0){
-        printf("you are not born yet!\n");
-    }
-    else {
-        printf("sorry cant do that\n");
     }
     return 0;
 }
